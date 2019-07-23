@@ -32,13 +32,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    the document object model. an api for html and xml documents which are represeted as nodes and objects while the browser determines what to render in the viewport. The DOM is a living model that can be modified by Javascript and allows a way for the page to be modified and updated.
+
 2. What is an event?
+
+    an event is an action that happens on the page because a user does something usually. like hover the mouse over the button or click the button, load the page
 
 3. What is an event listener?
 
+    a function that waits for an event to occur for it to happen
+
 4. Why would we convert a NodeList into an Array?
 
+    To gain access to additional methods
+
 5. What is a component?
+
+    Components are reusable pieces of code that can be used to build elements sharing functionality and styling. Components are the heart of any dynamic web application and Javascript framework.
 
 ### Git Set up
 
