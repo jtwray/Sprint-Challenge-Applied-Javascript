@@ -252,6 +252,10 @@ body {
   letter-spacing: 1px;
   font-weight: bold;
 }
+img {
+  max-width: 150px;
+  width: 50%;
+}
 .carousel {
   width: 100%;
   display: flex;
