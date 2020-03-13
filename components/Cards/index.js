@@ -18,61 +18,59 @@
 // </div>
 
 // Create a card for each of the articles and add the card to the DOM.
-const createTopic = (arr) => {
-	console.log("arr:", arr);
-	Array.from(arr).map((article) => {
-		return createArticleCard(article);
-	});
+const createTopic = arr => {
+  console.log("arr:", arr);
+  Array.from(arr).map(article => {
+    return createArticleCard(article);
+  });
 };
 
 const cardsContainer = document.querySelector(".cards-container");
 console.log("cardsContainer:", cardsContainer);
 
 const createArticleCard = (article = {}) => {
-	const articleCard = document.createElement("card");
-	articleCard.classList.add("card");
+  const articleCard = document.createElement("card");
+  articleCard.classList.add("card");
 
-	const headlineDiv = document.createElement("div");
-	headlineDiv.classList.add("headline");
-	headlineDiv.textContent = `${article.headline}`;
-	articleCard.appendChild(headlineDiv);
+  const headlineDiv = document.createElement("div");
+  headlineDiv.classList.add("headline");
+  headlineDiv.textContent = `${article.headline}`;
+  articleCard.appendChild(headlineDiv);
 
-	const authorDiv = document.createElement("div");
-	authorDiv.classList.add("author");
-	articleCard.appendChild(authorDiv);
+  const authorDiv = document.createElement("div");
+  authorDiv.classList.add("author");
+  articleCard.appendChild(authorDiv);
 
-	const articleImgDiv = document.createElement("div");
-	articleImgDiv.classList.add("img-container");
-	authorDiv.appendChild(articleImgDiv);
+  const articleImgDiv = document.createElement("div");
+  articleImgDiv.classList.add("img-container");
+  authorDiv.appendChild(articleImgDiv);
 
-	const articleImg = document.createElement("img");
-	articleImg.src = `${article.authorPhoto}`;
-	articleImgDiv.appendChild(articleImg);
+  const articleImg = document.createElement("img");
+  articleImg.src = `${article.authorPhoto}`;
+  articleImgDiv.appendChild(articleImg);
 
-	const authorsName = document.createElement("span");
-	authorsName.textContent = `By:${article.authorName}`;
-	authorDiv.appendChild(authorsName);
-	console.log("articleCard:", articleCard);
-	cardsContainer.appendChild(articleCard);
+  const authorsName = document.createElement("span");
+  authorsName.textContent = `By:${article.authorName}`;
+  authorDiv.appendChild(authorsName);
+  console.log("articleCard:", articleCard);
+  cardsContainer.appendChild(articleCard);
 };
 const fetchData = () => {
-	axios
-		.get(`https://lambda-times-backend.herokuapp.com/articles`)
-		.then((response) => {
-			const eachArticle = Object.values(response.data.articles).map(
-				(topic) => {
-					return Object.values(topic).map((article) => {
-						return createArticleCard(article);
-					});
-				}
-			);
-			console.log("eachArticle:", eachArticle);
+  axios
+    .get(`https://lambda-times-backend.herokuapp.com/articles`)
+    .then(response => {
+      const eachArticle = Object.values(response.data.articles).map(topic => {
+        return Object.values(topic).map(article => {
+          return createArticleCard(article);
+        });
+      });
+      console.log("eachArticle:", eachArticle);
 
-			console.log(eachArticle);
-		})
-		.catch(function(error) {
-			console.log(error);
-		});
+      console.log(eachArticle);
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
 };
 
 fetchData();

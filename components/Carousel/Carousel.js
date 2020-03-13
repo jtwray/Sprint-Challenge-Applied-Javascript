@@ -8,10 +8,11 @@
 */
 
 const carouselIndex = [
-	"C:/MAMP/htdocs/LambdaSchooL/Sprint-Challenge-Applied-Javascript/assets/carousel/computer.jpeg",
-	"C:/MAMP/htdocs/LambdaSchooL/Sprint-Challenge-Applied-Javascript/assets/carousel/mountains.jpeg",
-	"C:/MAMP/htdocs/LambdaSchooL/Sprint-Challenge-Applied-Javascript/assets/carousel/trees.jpeg",
-	"C:/MAMP/htdocs/LambdaSchooL/Sprint-Challenge-Applied-Javascript/assets/carousel/turntable.jpeg",
+	
+	"./assets/carousel/computer.jpeg",
+	"./assets/carousel/mountains.jpeg",
+	"./assets/carousel/trees.jpeg",
+	"./assets/carousel/turntable.jpeg",
 ];
 const createCarousel = () => {
 	const carouselDiv = document.createElement("div");
