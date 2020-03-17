@@ -160,9 +160,8 @@ body {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 3rem;
+  height: 47px;
   background-color: #fff;
-  margin: 0.5rem auto;
 }
 @media (min-width: 1280px) {
   .tabs {
@@ -180,9 +179,9 @@ body {
   letter-spacing: 1px;
   font-weight: bold;
 }
-.tabs .topics .tab {
-  display: flex;
+.tabs .tab {
   justify-content: none;
+  display: flex;
   align-items: center;
   flex-direction: row;
   color: #fff;
@@ -194,11 +193,23 @@ body {
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
+  border: 1.5px solid #eebb66;
+  box-shadow: 1px 1px 5px 0px #302d358f;
 }
-.tabs .topics .tab:hover {
-  text-decoration: underline;
+.tabs .tab:hover {
+  color: #fff;
+  background: #eebb68;
+  border-radius: 3px;
+  border: 1.5px solid #333;
+  padding: 10px solid black;
+  color: black;
+  text-shadow: -1px 1px 1px #f9f3f3;
+  box-shadow: 1px 1px 5px #0000009c;
 }
-.tabs .topics .active-tab {
+.tabs .tab:active {
+  box-shadow: inset 3px 1px 2px 2px #7d3f3f;
+}
+.tabs .tab .active-tab {
   background-color: #fff;
   color: #333;
   border: 2px solid #333;

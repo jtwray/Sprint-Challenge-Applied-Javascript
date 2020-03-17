@@ -67,9 +67,9 @@ const fetchData = () => {
       console.log("eachArticle:", eachArticle);
 
       console.log(eachArticle);
-    })
+    })                       
     .catch(function(error) {
-      console.log(error);
+      console.error(error);
     });
 };
 
