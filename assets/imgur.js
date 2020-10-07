@@ -10,7 +10,22 @@ let thumper = `https://i.imgur.com/OPr1W2Q.png`;
 let trees = `https://i.imgur.com/66qISQd.png`;
 let turntable = `https://i.imgur.com/KyeWUqG.png`;
 
+const images = [
+  bones,
+  computer,
+  mountains,
+  Thumper_Steven,
+  fido,
+  max,
+  puppers,
+  sir,
+  thumper,
+  trees,
+  turntable
+];
+
 module.exports = {
+  images,
   bones,
   computer,
   mountains,
