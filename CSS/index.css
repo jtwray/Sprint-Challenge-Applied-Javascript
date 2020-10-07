@@ -179,7 +179,7 @@ body {
 }
 .tabs .topics {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
 }
@@ -220,8 +220,7 @@ body {
 .tabs .tab.activetab {
   background: goldenrod;
   color: goldenrod;
-  text-shadow: 0.5px 0.5px 0px white, 0px 0px 5px white, 0.2px -0.8px 2px black,
-    -0.5px -0.5px 1px black;
+  text-shadow: 0.5px 0.5px 0px white, -0.5px -0.5px 0px black;
   box-shadow: inset 1px 0.5px 2px 2px #7d3f3f;
 }
 .tabs .tab:active {
