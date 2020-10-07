@@ -54,7 +54,6 @@ function Header() {
     headerDiv.appendChild( temp );
     
     const headerContainer=document.querySelector( ".header-container" );
-    console.log('correctfile')
     return headerContainer.appendChild( headerDiv );
     
 }
