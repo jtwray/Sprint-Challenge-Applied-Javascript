@@ -1,5 +1,5 @@
 {
-  "name": "vanilla",
+  "name": "Lambda Llama Times",
   "version": "1.0.0",
   "description": "Lambda News",
   "main": "index.html",
@@ -7,9 +7,12 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.11.2",
+    "core-js": "^3.6.5"
+  },
   "devDependencies": {
-    "@babel/core": "7.2.0",
+    "@babel/core": "^7.2.0",
     "parcel-bundler": "^1.6.1"
   },
   "keywords": [

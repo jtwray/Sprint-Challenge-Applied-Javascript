@@ -20,7 +20,7 @@
 // Create a card for each of the articles and add the card to the DOM.
 
 //imports optional alternate image sources from assets directory
-import * as images from "../../assets/imgur";
+const images = require("../../assets/imgur.js")
 
 const cardsContainer = document.querySelector(".cards-container");
 function createArticleCard(article, topic) {
