@@ -252,16 +252,18 @@ body {
   margin-bottom: 16px;
   padding: 24px;
 }
+
 html body div.cards-container > card[data-card].card {
   display: flex;
   transition: all ease 1s;
   position: inherit;
+  opacity: 1;
 }
 html body div.cards-container > card[data-card].card.hide {
   position: absolute;
-  transform: translateY(150vh);
   transition: all ease 1s;
-  opacity: 1;
+  opacity: 0;
+  transform: rotate3d(1, 1, 1, -115deg);
 }
 .cards-container .card .headline {
   font-size: 25px;
